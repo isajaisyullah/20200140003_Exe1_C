@@ -60,6 +60,8 @@ public class RegisterPage extends AppCompatActivity {
                         Bundle b = new Bundle();
 
                         b.putString("name", nama.trim());
+                        Toast t = Toast.makeText(getApplicationContext(), "Login Berhasil", Toast.LENGTH_LONG);
+                        t.show();
 
                         Intent i = new Intent(getApplicationContext(), TaskPage.class);
                         i.putExtras(b);
