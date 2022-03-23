@@ -74,6 +74,9 @@ public class TaskPage extends AppCompatActivity {
                     edJenis.setError("Masukan Jenis Task!");
                 }
                 else {
+
+                    Toast t = Toast.makeText(getApplicationContext(), "Berhasil", Toast.LENGTH_SHORT);
+                    t.show();
                     Bundle b = new Bundle();
 
                     b.putString("task", task.trim());
